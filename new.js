@@ -28,9 +28,11 @@ let mostPreferredIndex = null;
 //logic to find largest count
 //['react', 'node', 'java', 'python']
 Object.keys(countSkill).map((item)=>{
-    if(countSkill[item] > mostPreferedSkill){
+    if(countSkill[item] > mostPreferedSkill)
+        {
         mostPreferedSkill = countSkill[item];
         mostPreferredIndex = item;
     }
 })
 console.log({mostPreferedSkill: mostPreferredIndex})
+
